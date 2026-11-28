@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shreyas Shrivastava</title>
+<title>Shreyas Shrivastava · Data Science &amp; Machine Learning</title>
+<meta name="description" content="Shreyas Shrivastava: MS in Data Science student at the University of Washington, working on machine learning, computer vision and recommender systems.">
+<meta property="og:title" content="Shreyas Shrivastava">
+<meta property="og:description" content="MS in Data Science, University of Washington. Machine learning, computer vision and recommender systems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://shreyas3303.github.io/personal-website/images/recommender.jpg">
+<meta name="theme-color" content="#0f1b3d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b3d'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='800' font-size='38' text-anchor='middle' fill='%23ffb84d'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -16,7 +23,7 @@
   <nav aria-label="Sections">
     <a href="#about">About</a>
     <a href="#work">Work</a>
-    <a href="#projects">Projects</a>
+    <a href="projects.html">Projects</a>
     <a href="#background">Background</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -29,8 +36,7 @@
   <div class="hero-inner">
     <h1>Shreyas<br>Shrivastava</h1>
     <p class="sub">MS in Data Science, University of Washington</p>
-    <!-- EDIT: replace this placeholder with a one-line intro -->
-    <p class="ph ph-inline">Add a one-line intro here</p>
+    <p class="intro">I turn data into models that make smarter decisions, and I love every step of it.</p>
     <div class="cta">
       <a class="btn" href="#projects">See projects</a>
       <a class="btn ghost" href="#contact">Get in touch</a>
@@ -40,11 +46,14 @@
 
 <section id="about" class="wrap">
   <h2>About</h2>
+  <!-- To add a photo: put photo.jpg in images/, add class "has-photo" to the div below,
+       and add <img class="photo" src="images/photo.jpg" alt="Shreyas Shrivastava"> as its first child. -->
   <div class="about">
-    <!-- EDIT: replace with your photo, e.g. <img src="photo.jpg" alt="Shreyas Shrivastava"> -->
-    <div class="ph ph-photo">Add a photo</div>
-    <!-- EDIT: replace with your bio -->
-    <div class="ph ph-text">Add a short bio here: who you are, what you’re interested in, what you’re working on.</div>
+    <div class="bio">
+      <p>I’m an MS student in Data Science at the University of Washington. Before that, I studied Data Science and Cognitive Science at the University of Michigan.</p>
+      <p>I love exploring different industries to find where machine learning delivers real benefit, whether that’s optimizing resources, cutting waste or making everyday work more efficient. This past summer I was a deep learning intern at Focal Systems. At Michigan I did computer vision research, worked as a machine learning student researcher with Walbridge, and studied solar-flare forecasting with spatial and temporal deep learning models.</p>
+      <p>I’m especially interested in representation learning, recommender systems and multimodal models. If you’re working on something in that space, I’d love to hear about it.</p>
+    </div>
   </div>
 </section>
 
@@ -70,29 +79,35 @@
 </section>
 
 <section id="projects" class="wrap">
-  <h2>Projects</h2>
+  <div class="sec-head"><h2>Featured projects</h2><a class="more" href="projects.html">All projects <span aria-hidden="true">→</span></a></div>
   <div class="grid">
     <article class="card">
-      <div class="ph ph-shot">Add a screenshot or image</div>
-      <h3>Collaborative Filtering &amp; Sequential Recommendation for E-Commerce</h3>
-      <ul class="tags"><li>Predictive Analytics</li><li>A/B Testing</li><li>BI</li></ul>
-      <!-- EDIT: replace with your link -->
-      <p class="ph ph-inline">Add link</p>
-    </article>
-    <article class="card">
-      <div class="ph ph-shot">Add a screenshot or image</div>
-      <h3>SimCLR + Hard Negative Mining</h3>
-      <ul class="tags"><li>Self-Supervised Learning</li><li>Contrastive Learning</li><li>Representation Learning</li></ul>
-      <p class="ph ph-inline">Add link</p>
-    </article>
-    <article class="card">
-      <div class="ph ph-shot">Add a screenshot or image</div>
+      <a class="shot" href="https://github.com/Shreyas3303/viewtopsy"><img src="images/viewtopsy.jpg" alt="Viewtopsy chat-activity chart with ranked moments and chat mood strip" loading="lazy" width="1200" height="626"></a>
       <h3>Viewtopsy – Multimodal Livestream Analysis</h3>
+      <p class="desc">Finds the moments a Twitch or YouTube chat reacted to, classifies the reaction, explains the likely cause from video frames, and suggests clip-ready ranges.</p>
       <ul class="tags"><li>Vision Language Models</li><li>Zero-shot classification</li><li>Causal Attribution</li></ul>
-      <p class="ph ph-inline">Add link</p>
+      <a class="more" href="https://github.com/Shreyas3303/viewtopsy">View on GitHub <span aria-hidden="true">→</span></a>
     </article>
-    <article class="card ph-card">
-      <div class="ph ph-text">Add another project</div>
+    <article class="card">
+      <a class="shot" href="https://github.com/Shreyas3303/URPS-2026---Deep-Learning-for-Solar-Flare-Prediction/blob/main/URPS_2026_Poster.pdf"><img src="images/solar-flare.jpg" alt="Research poster: Deep Learning for Solar Flare Prediction with Spatial and Temporal Models" loading="lazy" width="1200" height="895"></a>
+      <h3>Deep Learning for Solar Flare Prediction</h3>
+      <p class="desc">Undergraduate research (U-M Statistics) forecasting M-class-or-larger flares from multi-channel solar images (ResNet-18, DINOv3, Surya) and magnetic-field time series (LSTM).</p>
+      <ul class="tags"><li>Computer Vision</li><li>Time Series</li><li>Foundation Models</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/URPS-2026---Deep-Learning-for-Solar-Flare-Prediction/blob/main/URPS_2026_Poster.pdf">View poster <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="card">
+      <a class="shot" href="https://github.com/Shreyas3303/Recommender-System-A-B-Testing-and-Revenue-Impact-Analysis"><img src="images/recommender.jpg" alt="ALS recommender beats the popularity baseline by 31% on hits" loading="lazy" width="1200" height="750"></a>
+      <h3>Collaborative Filtering &amp; Sequential Recommendation for E-Commerce</h3>
+      <p class="desc">Popularity, ALS and SASRec recommenders compared in paired A/B tests on 200k grocery shoppers. ALS lifted hits by 31% over the popularity baseline.</p>
+      <ul class="tags"><li>Predictive Analytics</li><li>A/B Testing</li><li>BI</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/Recommender-System-A-B-Testing-and-Revenue-Impact-Analysis">View on GitHub <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="card">
+      <a class="shot fit" href="https://github.com/Shreyas3303/contrastive-learning-negative-mining"><img src="images/simclr.jpg" alt="t-SNE maps of SimCLR and supervised image embeddings on STL-10" loading="lazy" width="1200" height="611"></a>
+      <h3>SimCLR + Hard Negative Mining</h3>
+      <p class="desc">SimCLR built from scratch with a hard-negative-weighted contrastive loss, pretrained on 100k unlabeled STL-10 images and benchmarked against supervised training at 1–100% of labels.</p>
+      <ul class="tags"><li>Self-Supervised Learning</li><li>Contrastive Learning</li><li>Representation Learning</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/contrastive-learning-negative-mining">View on GitHub <span aria-hidden="true">→</span></a>
     </article>
   </div>
 </section>
@@ -135,16 +150,16 @@
   <h2>Contact</h2>
   <a class="big" href="mailto:shreshri@uw.edu">shreshri@uw.edu</a>
   <ul class="links">
-    <li><a href="https://linkedin.com/in/shreyas-shrivastava-589263270">LinkedIn</a></li>
+    <li><a href="https://www.linkedin.com/in/shreyas-shrivastava-589263270">LinkedIn</a></li>
     <li><a href="https://github.com/shreyas3303">GitHub</a></li>
-    <!-- EDIT: replace with the link to your resume PDF -->
-    <li class="ph ph-inline">Add resume link</li>
+    <!-- To add a resume: put resume.pdf in the repo root and uncomment the next line -->
+    <!-- <li><a href="resume.pdf">Resume</a></li> -->
   </ul>
 </section>
 
 </main>
 
-<footer class="wrap foot">Shreyas Shrivastava</footer>
+<footer class="wrap foot">© 2026 Shreyas Shrivastava</footer>
 
 <script>
 (function () {

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Shreyas Shrivastava</title>
+<meta name="description" content="Machine learning and data science projects by Shreyas Shrivastava.">
+<meta property="og:title" content="Shreyas Shrivastava">
+<meta property="og:description" content="MS in Data Science, University of Washington. Machine learning, computer vision and recommender systems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://shreyas3303.github.io/personal-website/images/recommender.jpg">
+<meta name="theme-color" content="#0f1b3d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b3d'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='800' font-size='38' text-anchor='middle' fill='%23ffb84d'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="index.html">Shreyas Shrivastava</a>
+  <nav aria-label="Sections">
+    <a href="index.html#about">About</a>
+    <a href="index.html#work">Work</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="index.html#background">Background</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="wrap page-head">
+  <h1 class="page-title">Projects</h1>
+  <p class="intro">Everything I’ve built, from research to weekend experiments. Each one links to its code.</p>
+</section>
+
+<section class="wrap tight-top" aria-labelledby="featured">
+  <h2 id="featured">Featured</h2>
+  <div class="grid">
+    <article class="card">
+      <a class="shot" href="https://github.com/Shreyas3303/viewtopsy"><img src="images/viewtopsy.jpg" alt="Viewtopsy chat-activity chart with ranked moments and chat mood strip" loading="lazy" width="1200" height="626"></a>
+      <h3>Viewtopsy – Multimodal Livestream Analysis</h3>
+      <p class="desc">Finds the moments a Twitch or YouTube chat reacted to, classifies the reaction, explains the likely cause from video frames, and suggests clip-ready ranges.</p>
+      <ul class="tags"><li>Vision Language Models</li><li>Zero-shot classification</li><li>Causal Attribution</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/viewtopsy">View on GitHub <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="card">
+      <a class="shot" href="https://github.com/Shreyas3303/URPS-2026---Deep-Learning-for-Solar-Flare-Prediction/blob/main/URPS_2026_Poster.pdf"><img src="images/solar-flare.jpg" alt="Research poster: Deep Learning for Solar Flare Prediction with Spatial and Temporal Models" loading="lazy" width="1200" height="895"></a>
+      <h3>Deep Learning for Solar Flare Prediction</h3>
+      <p class="desc">Undergraduate research (U-M Statistics) forecasting M-class-or-larger flares from multi-channel solar images (ResNet-18, DINOv3, Surya) and magnetic-field time series (LSTM).</p>
+      <ul class="tags"><li>Computer Vision</li><li>Time Series</li><li>Foundation Models</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/URPS-2026---Deep-Learning-for-Solar-Flare-Prediction/blob/main/URPS_2026_Poster.pdf">View poster <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="card">
+      <a class="shot" href="https://github.com/Shreyas3303/Recommender-System-A-B-Testing-and-Revenue-Impact-Analysis"><img src="images/recommender.jpg" alt="ALS recommender beats the popularity baseline by 31% on hits" loading="lazy" width="1200" height="750"></a>
+      <h3>Collaborative Filtering &amp; Sequential Recommendation for E-Commerce</h3>
+      <p class="desc">Popularity, ALS and SASRec recommenders compared in paired A/B tests on 200k grocery shoppers. ALS lifted hits by 31% over the popularity baseline.</p>
+      <ul class="tags"><li>Predictive Analytics</li><li>A/B Testing</li><li>BI</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/Recommender-System-A-B-Testing-and-Revenue-Impact-Analysis">View on GitHub <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="card">
+      <a class="shot fit" href="https://github.com/Shreyas3303/contrastive-learning-negative-mining"><img src="images/simclr.jpg" alt="t-SNE maps of SimCLR and supervised image embeddings on STL-10" loading="lazy" width="1200" height="611"></a>
+      <h3>SimCLR + Hard Negative Mining</h3>
+      <p class="desc">SimCLR built from scratch with a hard-negative-weighted contrastive loss, pretrained on 100k unlabeled STL-10 images and benchmarked against supervised training at 1–100% of labels.</p>
+      <ul class="tags"><li>Self-Supervised Learning</li><li>Contrastive Learning</li><li>Representation Learning</li></ul>
+      <a class="more" href="https://github.com/Shreyas3303/contrastive-learning-negative-mining">View on GitHub <span aria-hidden="true">→</span></a>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="more">
+  <h2 id="more">More projects</h2>
+  <div class="minis">
+    <article class="mini">
+      <h3>DonorsChoose Essay-Length A/B Test</h3>
+      <p class="desc">Do longer project essays get approved more often? A simulated A/B test of 800–1,200 character minimums on 109k DonorsChoose proposals showed that longer essays do win, but a hard minimum would drop overall approval from 84.9% to as low as 64.7%.</p>
+      <ul class="tags"><li>A/B Testing</li><li>Hypothesis Testing</li><li>Product Analytics</li></ul>
+      <div class="mini-links"><a class="more" href="https://github.com/Shreyas3303/donors_choose_ab_testing">Code <span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="mini">
+      <h3>Video Game Success Predictor</h3>
+      <p class="desc">Predicts how well a video game will be rated, using data pulled from the IGDB API, engineered and target-encoded features, and Random Forest and XGBoost regressors.</p>
+      <ul class="tags"><li>Regression</li><li>Feature Engineering</li><li>XGBoost</li></ul>
+      <div class="mini-links"><a class="more" href="https://github.com/Shreyas3303/video-game-success-predictor">Code <span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="mini">
+      <h3>Chart Busters: Music Style Explorer</h3>
+      <p class="desc">Explore music by mood, energy, danceability and tempo instead of genre. Tune a song’s attributes, get recommendations, and build a spider chart of your taste. I built the artist profiles page.</p>
+      <ul class="tags"><li>Data Visualization</li><li>Recommendation</li><li>Interactive</li></ul>
+      <div class="mini-links"><a class="more" href="https://trtr04.github.io/chartbuster/">Live demo <span aria-hidden="true">→</span></a> <a class="more" href="https://github.com/trtr04/chartbuster">Code <span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="mini">
+      <h3>Conversational PDF Assistant</h3>
+      <p class="desc">Chat with your PDFs. Documents are split, embedded into a FAISS vector store and answered through a LangChain conversational retrieval chain in a Streamlit app.</p>
+      <ul class="tags"><li>RAG</li><li>LangChain</li><li>Streamlit</li></ul>
+      <div class="mini-links"><a class="more" href="https://github.com/adityamu2706/LLM">Code <span aria-hidden="true">→</span></a></div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot"><a href="index.html">← Back to home</a> · © 2026 Shreyas Shrivastava</footer>
+</body>
+</html>
