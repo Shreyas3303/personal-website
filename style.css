@@ -40,7 +40,8 @@ display:flex;align-items:center;justify-content:center;text-align:center;padding
 .intro{font-size:clamp(1.15rem,2.2vw,1.45rem);max-width:40rem;margin:0}
 .about{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:start}
 .about.has-photo{grid-template-columns:16rem 1fr}
-.photo{width:100%;aspect-ratio:1;object-fit:cover;border-radius:1rem;border:1px solid var(--rule)}
+.photo{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:1rem;border:1px solid var(--rule)}
+@media (max-width:52rem){.photo{max-width:14rem}}
 .bio{max-width:42rem;font-size:1.2rem}
 .bio p{margin:0 0 1.1rem}
 .bio p:first-child{font-size:1.35rem;line-height:1.5}
